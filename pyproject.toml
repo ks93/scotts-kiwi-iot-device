@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "scotts-kiwi-iot-device"
+version = "0.1.0"
+description = ""
+authors = ["Kelvin Sundli <kelvin.sundli@cognite.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+azure-iot-device = "^2.5.1"
+azure-iot-hub = "^2.2.3"
+azure-iothub-service-client = "^1.4.6"
+azure-iothub-device-client = "^1.4.6"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

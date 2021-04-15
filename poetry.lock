@@ -1,0 +1,392 @@
+[[package]]
+name = "azure-iot-device"
+version = "2.5.1"
+description = "Microsoft Azure IoT Device Library"
+category = "main"
+optional = false
+python-versions = ">=2.7.9, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, !=3.5.0, !=3.5.1, !=3.5.2, <4"
+
+[package.dependencies]
+deprecation = ">=2.1.0,<3.0.0"
+janus = {version = "0.4.0", markers = "python_version >= \"3.5\""}
+paho-mqtt = ">=1.4.0,<2.0.0"
+PySocks = "*"
+requests = ">=2.20.0,<3.0.0"
+requests-unixsocket = ">=0.1.5,<1.0.0"
+six = ">=1.12.0,<2.0.0"
+urllib3 = {version = ">1.21.1,<1.25.0 || >1.25.0,<1.25.1 || >1.25.1,<1.26", markers = "python_version != \"3.4\""}
+
+[[package]]
+name = "azure-iot-hub"
+version = "2.2.3"
+description = "Microsoft Azure IoTHub Service Library"
+category = "main"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3*, <4"
+
+[package.dependencies]
+msrest = "*"
+uamqp = "*"
+
+[[package]]
+name = "azure-iothub-device-client"
+version = "1.4.6"
+description = "IoT Hub Device Client Library"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
+name = "azure-iothub-service-client"
+version = "1.4.6"
+description = "IoT Hub Service Client Library"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
+name = "certifi"
+version = "2020.12.5"
+description = "Python package for providing Mozilla's CA Bundle."
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
+name = "chardet"
+version = "4.0.0"
+description = "Universal encoding detector for Python 2 and 3"
+category = "main"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
+
+[[package]]
+name = "deprecation"
+version = "2.1.0"
+description = "A library to handle automated deprecations"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+packaging = "*"
+
+[[package]]
+name = "idna"
+version = "2.10"
+description = "Internationalized Domain Names in Applications (IDNA)"
+category = "main"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+
+[[package]]
+name = "isodate"
+version = "0.6.0"
+description = "An ISO 8601 date/time/duration parser and formatter"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+six = "*"
+
+[[package]]
+name = "janus"
+version = "0.4.0"
+description = "Mixed sync-async queue to interoperate between asyncio tasks and classic threads"
+category = "main"
+optional = false
+python-versions = ">=3.5.3"
+
+[[package]]
+name = "msrest"
+version = "0.6.21"
+description = "AutoRest swagger generator Python client runtime."
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+certifi = ">=2017.4.17"
+isodate = ">=0.6.0"
+requests = ">=2.16,<3.0"
+requests-oauthlib = ">=0.5.0"
+
+[package.extras]
+async = ["aiohttp (>=3.0)", "aiodns"]
+
+[[package]]
+name = "oauthlib"
+version = "3.1.0"
+description = "A generic, spec-compliant, thorough implementation of the OAuth request-signing logic"
+category = "main"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+
+[package.extras]
+rsa = ["cryptography"]
+signals = ["blinker"]
+signedtoken = ["cryptography", "pyjwt (>=1.0.0)"]
+
+[[package]]
+name = "packaging"
+version = "20.9"
+description = "Core utilities for Python packages"
+category = "main"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+
+[package.dependencies]
+pyparsing = ">=2.0.2"
+
+[[package]]
+name = "paho-mqtt"
+version = "1.5.1"
+description = "MQTT version 5.0/3.1.1 client class"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.extras]
+proxy = ["pysocks"]
+
+[[package]]
+name = "pyparsing"
+version = "2.4.7"
+description = "Python parsing module"
+category = "main"
+optional = false
+python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*"
+
+[[package]]
+name = "pysocks"
+version = "1.7.1"
+description = "A Python SOCKS client module. See https://github.com/Anorov/PySocks for more information."
+category = "main"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+
+[[package]]
+name = "requests"
+version = "2.25.1"
+description = "Python HTTP for Humans."
+category = "main"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
+
+[package.dependencies]
+certifi = ">=2017.4.17"
+chardet = ">=3.0.2,<5"
+idna = ">=2.5,<3"
+urllib3 = ">=1.21.1,<1.27"
+
+[package.extras]
+security = ["pyOpenSSL (>=0.14)", "cryptography (>=1.3.4)"]
+socks = ["PySocks (>=1.5.6,!=1.5.7)", "win-inet-pton"]
+
+[[package]]
+name = "requests-oauthlib"
+version = "1.3.0"
+description = "OAuthlib authentication support for Requests."
+category = "main"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+
+[package.dependencies]
+oauthlib = ">=3.0.0"
+requests = ">=2.0.0"
+
+[package.extras]
+rsa = ["oauthlib[signedtoken] (>=3.0.0)"]
+
+[[package]]
+name = "requests-unixsocket"
+version = "0.2.0"
+description = "Use requests to talk HTTP via a UNIX domain socket"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+requests = ">=1.1"
+urllib3 = ">=1.8"
+
+[[package]]
+name = "six"
+version = "1.15.0"
+description = "Python 2 and 3 compatibility utilities"
+category = "main"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
+
+[[package]]
+name = "uamqp"
+version = "1.3.0"
+description = "AMQP 1.0 Client Library for Python"
+category = "main"
+optional = false
+python-versions = ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*"
+
+[package.dependencies]
+certifi = ">=2017.4.17"
+six = ">=1.0,<2.0"
+
+[[package]]
+name = "urllib3"
+version = "1.25.11"
+description = "HTTP library with thread-safe connection pooling, file post, and more."
+category = "main"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, <4"
+
+[package.extras]
+brotli = ["brotlipy (>=0.6.0)"]
+secure = ["pyOpenSSL (>=0.14)", "cryptography (>=1.3.4)", "idna (>=2.0.0)", "certifi", "ipaddress"]
+socks = ["PySocks (>=1.5.6,!=1.5.7,<2.0)"]
+
+[metadata]
+lock-version = "1.1"
+python-versions = "^3.8"
+content-hash = "a9c4d684c0559200e4f0e95d82c8a4cd900fae94c7cb715c92e3da70e1845301"
+
+[metadata.files]
+azure-iot-device = [
+    {file = "azure-iot-device-2.5.1.tar.gz", hash = "sha256:8605e3eadc42f628fd00b2343506dc2ebf4b66904121030acd23b1abd94c967a"},
+    {file = "azure_iot_device-2.5.1-py2.py3-none-any.whl", hash = "sha256:e37df1b88aee7dc1e0dfccafa45bd90870bdb15a24fc6f54d3014d6d6f214f34"},
+]
+azure-iot-hub = [
+    {file = "azure-iot-hub-2.2.3.tar.gz", hash = "sha256:3d50e9a3b1f90f54baabf3159fd009e5c4231bd2b338f19acf17c28ce6c94a26"},
+    {file = "azure_iot_hub-2.2.3-py2.py3-none-any.whl", hash = "sha256:05b26ca59d37d451b1e9e829aebd44d07a7884b63a1456f5b5206f3eeb11062e"},
+]
+azure-iothub-device-client = [
+    {file = "azure_iothub_device_client-1.4.6-py2-none-linux_armv7l.whl", hash = "sha256:37ddff2a1de10f640b0192c6fd1a3ace3e11d4851992a2222aa1ccca781974c4"},
+    {file = "azure_iothub_device_client-1.4.6-py2-none-macosx_10_6_x86_64.whl", hash = "sha256:39ee73daf1b1290c88084e72ff272bc3142f8ca259604c0f89687f0c621d426f"},
+    {file = "azure_iothub_device_client-1.4.6-py2-none-manylinux1_i686.whl", hash = "sha256:d2d785c69deba82530fdb8abec69cd3c0e294716a944c724eadefa45b7aa224f"},
+    {file = "azure_iothub_device_client-1.4.6-py2-none-manylinux1_x86_64.whl", hash = "sha256:2670262aa39b17a469a3ca79e3098dc3258289fc44c54533d03d8c81690221a3"},
+    {file = "azure_iothub_device_client-1.4.6-py2-none-win32.whl", hash = "sha256:2af21b667d7266bbd993f5398840d5a5115d5f67a6595a248c0816ef3ac8bdbf"},
+    {file = "azure_iothub_device_client-1.4.6-py2-none-win_amd64.whl", hash = "sha256:cf380af9df478a61006c957670602cfe19a9e57bd6ec9d4e1ee380fc80b21838"},
+    {file = "azure_iothub_device_client-1.4.6-py3-none-linux_armv7l.whl", hash = "sha256:388d9ecedc445070f8618e42b4dceff94e72e9bf97c3439e6642fd50f4299978"},
+    {file = "azure_iothub_device_client-1.4.6-py3-none-macosx_10_6_x86_64.whl", hash = "sha256:e05facf315c0b9beb9c2113dd9342210648ac87b406a998798edc3f616b7dcf6"},
+    {file = "azure_iothub_device_client-1.4.6-py3-none-manylinux1_i686.whl", hash = "sha256:2c1630ff57f08eabbbaf917d6970cfbab0c55746754a59d26264ff5bbf63ad1b"},
+    {file = "azure_iothub_device_client-1.4.6-py3-none-manylinux1_x86_64.whl", hash = "sha256:215dd17549c34d9587ebf51808a29ded6d85e1c7502050cc09c093ce9f8036b9"},
+    {file = "azure_iothub_device_client-1.4.6-py3-none-win32.whl", hash = "sha256:f4c59ef96985d4f18afe3e11866a5806f53b5ec95501c37ead01d9cab142627e"},
+    {file = "azure_iothub_device_client-1.4.6-py3-none-win_amd64.whl", hash = "sha256:de3a2387bd7ee723d02b5458f41f6a02ac31ddd273c07c41882ad30823cc5b76"},
+]
+azure-iothub-service-client = [
+    {file = "azure_iothub_service_client-1.4.6-py2-none-linux_armv7l.whl", hash = "sha256:18aecf7ee0f03119bbaeac37354bb915e39bc57ee7047dd186c0241d70fd88b7"},
+    {file = "azure_iothub_service_client-1.4.6-py2-none-macosx_10_6_x86_64.whl", hash = "sha256:b92ea444fa98b8fe89dbd07441b9c94e1d4a947117f91c55da9c530e35761a8e"},
+    {file = "azure_iothub_service_client-1.4.6-py2-none-manylinux1_i686.whl", hash = "sha256:b1cb1fc5c19fe31e742a9a93d5bd5392a3cdef7b55970b7a1b1e33d4e03c657b"},
+    {file = "azure_iothub_service_client-1.4.6-py2-none-manylinux1_x86_64.whl", hash = "sha256:b8c876a5732ec14908c80bdba7ccfebad68d261b1879990c54cf48c46f8e5186"},
+    {file = "azure_iothub_service_client-1.4.6-py2-none-win32.whl", hash = "sha256:498ba729a5728b45f121209a2e3994daa7bf63d2c31c821a3ec39955cc41ba1c"},
+    {file = "azure_iothub_service_client-1.4.6-py2-none-win_amd64.whl", hash = "sha256:1d6a680acdfac21dcaaf49871d54cf6cecd09c34d817ae41f1084c8d0aa0ccac"},
+    {file = "azure_iothub_service_client-1.4.6-py3-none-linux_armv7l.whl", hash = "sha256:b536b9ea821097db551b9d743a06d3843bb9070df656db6039a426f3fda05512"},
+    {file = "azure_iothub_service_client-1.4.6-py3-none-macosx_10_6_x86_64.whl", hash = "sha256:6dfa3667595ac995755a84c3684aa223e12e828d4eebceca25ca3438bf99a224"},
+    {file = "azure_iothub_service_client-1.4.6-py3-none-manylinux1_i686.whl", hash = "sha256:b2e68d6cfbbe462e4b9759ef940d46e1596a0606343fafa18913773d68f1e19c"},
+    {file = "azure_iothub_service_client-1.4.6-py3-none-manylinux1_x86_64.whl", hash = "sha256:105746ed472f3ab39fbceaa51409ab1ac73946923baf15ca3ea346f471ac03ac"},
+    {file = "azure_iothub_service_client-1.4.6-py3-none-win32.whl", hash = "sha256:a41daeca80ef561f3a7a72f6a195df42a4fce00695b793c173b5a5c22bf63e97"},
+    {file = "azure_iothub_service_client-1.4.6-py3-none-win_amd64.whl", hash = "sha256:09f102f6c3e265f696bac764a3d128c554b6097fabb8b2102d689227fc652441"},
+]
+certifi = [
+    {file = "certifi-2020.12.5-py2.py3-none-any.whl", hash = "sha256:719a74fb9e33b9bd44cc7f3a8d94bc35e4049deebe19ba7d8e108280cfd59830"},
+    {file = "certifi-2020.12.5.tar.gz", hash = "sha256:1a4995114262bffbc2413b159f2a1a480c969de6e6eb13ee966d470af86af59c"},
+]
+chardet = [
+    {file = "chardet-4.0.0-py2.py3-none-any.whl", hash = "sha256:f864054d66fd9118f2e67044ac8981a54775ec5b67aed0441892edb553d21da5"},
+    {file = "chardet-4.0.0.tar.gz", hash = "sha256:0d6f53a15db4120f2b08c94f11e7d93d2c911ee118b6b30a04ec3ee8310179fa"},
+]
+deprecation = [
+    {file = "deprecation-2.1.0-py2.py3-none-any.whl", hash = "sha256:a10811591210e1fb0e768a8c25517cabeabcba6f0bf96564f8ff45189f90b14a"},
+    {file = "deprecation-2.1.0.tar.gz", hash = "sha256:72b3bde64e5d778694b0cf68178aed03d15e15477116add3fb773e581f9518ff"},
+]
+idna = [
+    {file = "idna-2.10-py2.py3-none-any.whl", hash = "sha256:b97d804b1e9b523befed77c48dacec60e6dcb0b5391d57af6a65a312a90648c0"},
+    {file = "idna-2.10.tar.gz", hash = "sha256:b307872f855b18632ce0c21c5e45be78c0ea7ae4c15c828c20788b26921eb3f6"},
+]
+isodate = [
+    {file = "isodate-0.6.0-py2.py3-none-any.whl", hash = "sha256:aa4d33c06640f5352aca96e4b81afd8ab3b47337cc12089822d6f322ac772c81"},
+    {file = "isodate-0.6.0.tar.gz", hash = "sha256:2e364a3d5759479cdb2d37cce6b9376ea504db2ff90252a2e5b7cc89cc9ff2d8"},
+]
+janus = [
+    {file = "janus-0.4.0-py3-none-any.whl", hash = "sha256:86878806559274376b83193bfd992ad94576d1024ddfc69cf1a908bf20d6b37d"},
+    {file = "janus-0.4.0.tar.gz", hash = "sha256:cfc221683160b91b35bae1917e2957b78dad10a2e634f4f8ed119ed72e2a88ef"},
+]
+msrest = [
+    {file = "msrest-0.6.21-py2.py3-none-any.whl", hash = "sha256:c840511c845330e96886011a236440fafc2c9aff7b2df9c0a92041ee2dee3782"},
+    {file = "msrest-0.6.21.tar.gz", hash = "sha256:72661bc7bedc2dc2040e8f170b6e9ef226ee6d3892e01affd4d26b06474d68d8"},
+]
+oauthlib = [
+    {file = "oauthlib-3.1.0-py2.py3-none-any.whl", hash = "sha256:df884cd6cbe20e32633f1db1072e9356f53638e4361bef4e8b03c9127c9328ea"},
+    {file = "oauthlib-3.1.0.tar.gz", hash = "sha256:bee41cc35fcca6e988463cacc3bcb8a96224f470ca547e697b604cc697b2f889"},
+]
+packaging = [
+    {file = "packaging-20.9-py2.py3-none-any.whl", hash = "sha256:67714da7f7bc052e064859c05c595155bd1ee9f69f76557e21f051443c20947a"},
+    {file = "packaging-20.9.tar.gz", hash = "sha256:5b327ac1320dc863dca72f4514ecc086f31186744b84a230374cc1fd776feae5"},
+]
+paho-mqtt = [
+    {file = "paho-mqtt-1.5.1.tar.gz", hash = "sha256:9feb068e822be7b3a116324e01fb6028eb1d66412bf98595ae72698965cb1cae"},
+]
+pyparsing = [
+    {file = "pyparsing-2.4.7-py2.py3-none-any.whl", hash = "sha256:ef9d7589ef3c200abe66653d3f1ab1033c3c419ae9b9bdb1240a85b024efc88b"},
+    {file = "pyparsing-2.4.7.tar.gz", hash = "sha256:c203ec8783bf771a155b207279b9bccb8dea02d8f0c9e5f8ead507bc3246ecc1"},
+]
+pysocks = [
+    {file = "PySocks-1.7.1-py27-none-any.whl", hash = "sha256:08e69f092cc6dbe92a0fdd16eeb9b9ffbc13cadfe5ca4c7bd92ffb078b293299"},
+    {file = "PySocks-1.7.1-py3-none-any.whl", hash = "sha256:2725bd0a9925919b9b51739eea5f9e2bae91e83288108a9ad338b2e3a4435ee5"},
+    {file = "PySocks-1.7.1.tar.gz", hash = "sha256:3f8804571ebe159c380ac6de37643bb4685970655d3bba243530d6558b799aa0"},
+]
+requests = [
+    {file = "requests-2.25.1-py2.py3-none-any.whl", hash = "sha256:c210084e36a42ae6b9219e00e48287def368a26d03a048ddad7bfee44f75871e"},
+    {file = "requests-2.25.1.tar.gz", hash = "sha256:27973dd4a904a4f13b263a19c866c13b92a39ed1c964655f025f3f8d3d75b804"},
+]
+requests-oauthlib = [
+    {file = "requests-oauthlib-1.3.0.tar.gz", hash = "sha256:b4261601a71fd721a8bd6d7aa1cc1d6a8a93b4a9f5e96626f8e4d91e8beeaa6a"},
+    {file = "requests_oauthlib-1.3.0-py2.py3-none-any.whl", hash = "sha256:7f71572defaecd16372f9006f33c2ec8c077c3cfa6f5911a9a90202beb513f3d"},
+    {file = "requests_oauthlib-1.3.0-py3.7.egg", hash = "sha256:fa6c47b933f01060936d87ae9327fead68768b69c6c9ea2109c48be30f2d4dbc"},
+]
+requests-unixsocket = [
+    {file = "requests-unixsocket-0.2.0.tar.gz", hash = "sha256:9e5c1a20afc3cf786197ae59c79bcdb0e7565f218f27df5f891307ee8817c1ea"},
+    {file = "requests_unixsocket-0.2.0-py2.py3-none-any.whl", hash = "sha256:014d07bfb66dc805a011a8b4b306cf4ec96d2eddb589f6b2b5765e626f0dc0cc"},
+]
+six = [
+    {file = "six-1.15.0-py2.py3-none-any.whl", hash = "sha256:8b74bedcbbbaca38ff6d7491d76f2b06b3592611af620f8426e82dddb04a5ced"},
+    {file = "six-1.15.0.tar.gz", hash = "sha256:30639c035cdb23534cd4aa2dd52c3bf48f06e5f4a941509c8bafd8ce11080259"},
+]
+uamqp = [
+    {file = "uamqp-1.3.0-cp27-cp27m-macosx_10_9_x86_64.whl", hash = "sha256:9b3bd53b636589899ead43a52b8242f7fdf5c19b01ec60929e2e5ee44c776769"},
+    {file = "uamqp-1.3.0-cp27-cp27m-manylinux1_x86_64.whl", hash = "sha256:169a3aa9e2af96629a074a63d93e60d2835d94f0bcb0ec9c3c07fca6cf86f7cf"},
+    {file = "uamqp-1.3.0-cp27-cp27m-manylinux2010_x86_64.whl", hash = "sha256:253c061e88f34c53088453d3d9592170920e87b514d3a2d8fac4ec32aabfa31c"},
+    {file = "uamqp-1.3.0-cp27-cp27m-win32.whl", hash = "sha256:ceaa44f299ce61bcb187c36ed09fcd08446877140824754c0d1a52cf99d30c56"},
+    {file = "uamqp-1.3.0-cp27-cp27m-win_amd64.whl", hash = "sha256:5343230dafeb36a57a8088eecafe4d275acb80550202a92f4cfb82e3f05e29aa"},
+    {file = "uamqp-1.3.0-cp27-cp27mu-manylinux1_x86_64.whl", hash = "sha256:bde13003abcc98dd2c4615755f2a310c201ed6b613c9a873bbae80f2261825c9"},
+    {file = "uamqp-1.3.0-cp27-cp27mu-manylinux2010_x86_64.whl", hash = "sha256:d0aa4edd4a64b5aea2d7fe006f816bb0fb1b96bf66b673cfcc4fd37784a5e662"},
+    {file = "uamqp-1.3.0-cp35-cp35m-macosx_10_9_intel.whl", hash = "sha256:855c35ad751afbd0010b4ab6543104125b7bd854d622d03b9c5e5e2641ce5b8b"},
+    {file = "uamqp-1.3.0-cp35-cp35m-manylinux1_x86_64.whl", hash = "sha256:2daa6d4d545cca504c436d5cb143000683dc2c7d5751c61e996eef8530e33cd9"},
+    {file = "uamqp-1.3.0-cp35-cp35m-manylinux2010_x86_64.whl", hash = "sha256:565e57cb6a3d47502bbd41d1b901b5c6d6f89a58737697f9c0315bab924547a4"},
+    {file = "uamqp-1.3.0-cp35-cp35m-win32.whl", hash = "sha256:feb3085e429d603c4028a241d2b152fd12f3f7236588aa866c31d08ea62ff0be"},
+    {file = "uamqp-1.3.0-cp35-cp35m-win_amd64.whl", hash = "sha256:19a2c9747244928f234d76caa2c11abc70b773c802bdc7811cb46d652a1bf36c"},
+    {file = "uamqp-1.3.0-cp36-cp36m-macosx_10_9_x86_64.whl", hash = "sha256:b1843b061aff1f66329eefc3f91934e7ec86f05b7c02e7e71c2384cb584a173f"},
+    {file = "uamqp-1.3.0-cp36-cp36m-manylinux1_x86_64.whl", hash = "sha256:2dac012f1ac5f28f11b9ebebfc4dd1bd81b30786e6cb5488d30b587f74204a4b"},
+    {file = "uamqp-1.3.0-cp36-cp36m-manylinux2010_x86_64.whl", hash = "sha256:3a9fca1b309068f0dd70f0a941b797558affafb5d4973c8ec9d10ad173297b6d"},
+    {file = "uamqp-1.3.0-cp36-cp36m-win32.whl", hash = "sha256:db0b2616233fb6c7ebe9146eead828beb524c7ec18f477dd45cb8ca19de1ba87"},
+    {file = "uamqp-1.3.0-cp36-cp36m-win_amd64.whl", hash = "sha256:154791cd1a41152d70e552ca8638e899a057cf775933f9f3d63d0a44a11269c2"},
+    {file = "uamqp-1.3.0-cp37-cp37m-macosx_10_9_x86_64.whl", hash = "sha256:35e4cb705d1d077cb558e3ec848478dbfd2dcaed4ff26dee3111e62c2e350a6a"},
+    {file = "uamqp-1.3.0-cp37-cp37m-manylinux1_x86_64.whl", hash = "sha256:3334909875a97a1e95bfecf2a7fe1c33a8910c70a268e61d119943a64802db6d"},
+    {file = "uamqp-1.3.0-cp37-cp37m-manylinux2010_x86_64.whl", hash = "sha256:fc3f29433a8fb461c84241c32e65d2508276d034a85f9ccdaeb1f6aa3886e2ed"},
+    {file = "uamqp-1.3.0-cp37-cp37m-win32.whl", hash = "sha256:a805499d9e984ecde5379a321fc1606da2822f931e50706bb900897386b2a955"},
+    {file = "uamqp-1.3.0-cp37-cp37m-win_amd64.whl", hash = "sha256:aa85f35269b290b7c41e49c71fa4a1be09101f6b783ba29bada826d55739572b"},
+    {file = "uamqp-1.3.0-cp38-cp38-macosx_10_9_x86_64.whl", hash = "sha256:0bcf9f7ff14b9c9dd8d14440aec3085627bf81c952e25c87be7503382e7311b5"},
+    {file = "uamqp-1.3.0-cp38-cp38-manylinux1_x86_64.whl", hash = "sha256:fbf2b98252b252c7b866617c07c99d7386d4aac4632b07e2f84d33afb140e9aa"},
+    {file = "uamqp-1.3.0-cp38-cp38-manylinux2010_x86_64.whl", hash = "sha256:d3b902e747e6e2f57b09faeffae2492337d857e6aaa1058387dacc272e9e7f95"},
+    {file = "uamqp-1.3.0-cp38-cp38-win32.whl", hash = "sha256:e7ac36195f7186a98eb0a12be77674bb268f9b72c535b3a3fdc88e1072a34f60"},
+    {file = "uamqp-1.3.0-cp38-cp38-win_amd64.whl", hash = "sha256:9e19517cbbd1d112221337dbdf445cdf1dfba44eeeefcc40459f26c20422ffed"},
+    {file = "uamqp-1.3.0-cp39-cp39-macosx_10_9_x86_64.whl", hash = "sha256:d465cac3ea073b8baac9149a1fcc7379730085b8845290b91ea002e808cda5d7"},
+    {file = "uamqp-1.3.0-cp39-cp39-manylinux1_x86_64.whl", hash = "sha256:a17ad690057a06819c3d1ad61cf00d158f80bf7c588fd71b8a9f039ae262c1d9"},
+    {file = "uamqp-1.3.0-cp39-cp39-manylinux2010_x86_64.whl", hash = "sha256:e7648198070b30120a69e01b8b063bce295b0c802132c209472f557d7c2a44e6"},
+    {file = "uamqp-1.3.0-cp39-cp39-win32.whl", hash = "sha256:c0647d9cf31f00739008c5b3ce781d98451dfd9319c13b265deb05f6bb76802e"},
+    {file = "uamqp-1.3.0-cp39-cp39-win_amd64.whl", hash = "sha256:5231dfda8f33dae9ad336eca79c7a2d0cf5aab71a44ce2cd2963439861850806"},
+    {file = "uamqp-1.3.0.tar.gz", hash = "sha256:6f610b1e1a2e930312c920286966a22ababe59dc3c7f747353a78f84da8ff7d2"},
+]
+urllib3 = [
+    {file = "urllib3-1.25.11-py2.py3-none-any.whl", hash = "sha256:f5321fbe4bf3fefa0efd0bfe7fb14e90909eb62a48ccda331726b4319897dd5e"},
+    {file = "urllib3-1.25.11.tar.gz", hash = "sha256:8d7eaa5a82a1cac232164990f04874c594c9453ec55eef02eab885aa02fc17a2"},
+]
