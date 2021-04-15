@@ -4,16 +4,14 @@ import time
 
 from azure.iot.device import IoTHubDeviceClient, Message
 
+from src.az_utils import iothub_client_init
+
 CONNECTION_STRING = os.getenv("IOT_HUB_CONN_STRING")
 
-TEMPERATURE = 20.0
-HUMIDITY = 60
 MSG_TXT = '{{"temperature": {temperature},"humidity": {humidity}}}'
 
-
-def iothub_client_init():
-    client = IoTHubDeviceClient.create_from_connection_string(CONNECTION_STRING)
-    return client
+TEMPERATURE = 20
+HUMIDITY = 60
 
 
 def iothub_client_telemetry_sample_run():
